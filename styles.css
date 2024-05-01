@@ -40,6 +40,10 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 3fr 1fr;
     background-color: var(--secondary-color)   ;
+    transition-duration: 500ms;
+}
+.photocard:hover{
+    transform:translateY(-10px);
 }
 img{
     padding: 5%;
