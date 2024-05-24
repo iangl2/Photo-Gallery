@@ -11,7 +11,7 @@ function returnPets(url){
     for(let i=0;i<12;i++){
         fetch(url).then(res => res.json()).then(function(data){
             
-            const breed= () => { const value =  data.message.split("/")[4]; return value.includes("-") ?  value.split("-")[1] + " " +value.split("-")[0] : value };
+            const breed= () => { const value =  data.message.split("/")[4];  return value.includes("-") ?   value.split("-").reverse().join(" ") : value };
             console.log(data.message)
             console.log(breed());
             const photocard =document.createElement('div');
