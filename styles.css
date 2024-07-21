@@ -157,7 +157,7 @@ img{
     
     
 }
-.imageDescription{
+.imageDescription, .dropdown-content > a{
     text-transform: capitalize;
 }
 #footer{
@@ -178,3 +178,28 @@ a{
     align-items: center;
     user-select: none;
 }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    max-height: 110px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: height 1s ease 0s;
+  }
+  .dropdown-content > a{
+    color: black;
+  }
+  .dropdown-content > a:hover{
+    background-color: gray;
+  }
+  .show {display: block; }
+  /* #dropdown-search:hover>.dropdown-content{
+    display: block;
+  }
+   */
